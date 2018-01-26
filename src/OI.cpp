@@ -70,10 +70,10 @@ OI::OI() {
     frc::SmartDashboard::PutData("moveLift", new moveLift());
     frc::SmartDashboard::PutData("moveRight", new moveRight());
     frc::SmartDashboard::PutData("moveLeft", new moveLeft());
-    frc::SmartDashboard::PutData("movetoScaleTop", new movetoScaleTop());
-    frc::SmartDashboard::PutData("movetoScaleNeutral", new movetoScaleNeutral());
-    frc::SmartDashboard::PutData("movetoSwitchTop", new movetoSwitchTop());
-    frc::SmartDashboard::PutData("movetoScaleBottom", new movetoScaleBottom());
+    frc::SmartDashboard::PutData("movetoScaleTop", new movetoScaleTop(0));
+    frc::SmartDashboard::PutData("movetoScaleNeutral", new movetoScaleNeutral(0));
+    frc::SmartDashboard::PutData("movetoSwitchTop", new movetoSwitchTop(0));
+    frc::SmartDashboard::PutData("movetoScaleBottom", new movetoScaleBottom(0));
     frc::SmartDashboard::PutData("moveIntakeOut", new moveIntakeOut());
     frc::SmartDashboard::PutData("closePiston", new closePiston());
     frc::SmartDashboard::PutData("openPiston", new openPiston());
