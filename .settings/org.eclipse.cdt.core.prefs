@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1104744751/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1104744751/PATH/operation=append
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1104744751/PATH/value=C\:\\MinGW\\bin\\g++.exe
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1104744751/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1104744751/appendContributed=true
