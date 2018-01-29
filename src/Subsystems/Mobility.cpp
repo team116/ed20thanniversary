@@ -45,9 +45,10 @@ Mobility::Mobility() :
 	frontRightMotor = RobotMap::mobilityfrontRightMotor;
 	rearRightMotor = RobotMap::mobilityrearRightMotor;
 	rightSpeedController = RobotMap::mobilityrightSpeedController;
-	differentialDrive1 = RobotMap::mobilityDifferentialDrive1;
 	leftEncoder = RobotMap::mobilityleftEncoder;
 	rightEncoder = RobotMap::mobilityrightEncoder;
+
+
 
 	leftJoystick = Robot::oi->getleftJoystick();;
 	rightJoystick = Robot::oi->getrightJoystick();
@@ -85,9 +86,8 @@ void Mobility::UsePIDOutput(double output) {
 
 void Mobility::move() {
 	double leftSpeed = leftJoystick->GetY();
-	leftSpeedController->Set(leftSpeed);
 	double rightSpeed = rightJoystick->GetY();
-	rightSpeedController->Set(rightSpeed);
+	diffDrive.TankDrive(leftSpeed, rightSpeed, false);
 }
 
 void Mobility::InitDefaultCommand() {
